@@ -6,73 +6,136 @@
   <title>2026 未來科技論壇</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">FUTURE TECH 2026</a>
+      <a class="navbar-brand fw-bold" href="#">TECH 2026</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">首頁</a></li>
           <li class="nav-item"><a class="nav-link" href="#agenda">議程</a></li>
           <li class="nav-item"><a class="nav-link" href="#speakers">講者</a></li>
-          <li class="nav-item"><a class="nav-link" href="#transport">資訊</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-info text-dark ms-lg-3" href="#contact">立即報名</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">活動資訊</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="#contact">立即報名</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="vh-100 d-flex align-items-center text-center text-white" 
-    style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80'); background-size: cover; background-position: center;">
-    <div class="container" data-aos="fade-up">
-      <h1 class="display-1 fw-bold">2026 未來科技論壇</h1>
-      <p class="lead mb-5">解構人工智慧與量子計算的下一個巔峰</p>
-      <a href="#contact" class="btn btn-primary btn-lg px-5">免費預約</a>
+  <header id="hero" class="vh-100 d-flex align-items-center text-center text-white" 
+    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80'); background-size: cover; background-position: center;">
+    <div class="container" data-aos="zoom-in">
+      <h1 class="display-1 fw-bold mb-4">2026 未來科技論壇</h1>
+      <p class="h3 mb-5 fw-light">解構 AI 與量子計算的下一個十年</p>
+      <a href="#contact" class="btn btn-lg btn-outline-light px-5 py-3">Call to Action 按鈕</a>
     </div>
   </header>
 
   <section id="agenda" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5" data-aos="fade-right">大會議程</h2>
+      <h2 class="text-center mb-5" data-aos="fade-up">大會議程</h2>
       <div class="row g-4">
-        <div class="col-md-4" data-aos="flip-up">
-          <div class="card h-100 shadow border-0">
-            <div class="card-body">
-              <span class="badge bg-primary mb-2">09:00 - 10:30</span>
-              <h5 class="card-title">開幕演講：AI 奇點</h5>
-              <p class="card-text">探討 2026 年通用人工智慧的進展。</p>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body p-4">
+              <h5 class="text-primary fw-bold">09:00 - 10:30</h5>
+              <h4 class="card-title">AI 奇點與未來產業</h4>
+              <p class="card-text text-muted">探討生成式 AI 如何徹底改變 2026 年的工作形態。</p>
             </div>
           </div>
         </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body p-4">
+              <h5 class="text-primary fw-bold">11:00 - 12:30</h5>
+              <h4 class="card-title">量子計算的商業轉型</h4>
+              <p class="card-text text-muted">解析量子優勢在金融與製藥業的實務應用。</p>
+            </div>
+          </div>
         </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body p-4">
+              <h5 class="text-primary fw-bold">14:00 - 16:00</h5>
+              <h4 class="card-title">永續科技論壇</h4>
+              <p class="card-text text-muted">邁向 2030 淨零排放，科技如何扮演關鍵角色。</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="speakers" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-5" data-aos="zoom-in">特邀講者</h2>
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="flip-down">特邀講者</h2>
       <div id="speakerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner p-5">
-          <div class="carousel-item active">
-            <img src="https://i.pravatar.cc/150?u=1" class="rounded-circle mb-3 shadow" alt="Speaker">
-            <h4>張博士</h4>
-            <p>量子科技首席專家</p>
-            <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#speakerModal">查看介紹</button>
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center py-4">
+            <img src="https://i.pravatar.cc/150?u=tech1" class="rounded-circle mb-3 shadow" alt="Speaker">
+            <h4>Dr. Sarah Chen</h4>
+            <p class="text-muted">OpenAI 首席研究員</p>
+            <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#speakerModal1">查看介紹</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="modal fade" id="speakerModal" tabindex="-1">
+  <div class="modal fade" id="speakerModal1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header"><h5>講者介紹</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-        <div class="modal-body text-start">這是一位致力於改變世界的科學家...</div>
+        <div class="modal-body">Sarah Chen 博士在神經網絡領域擁有超過十年的研究經驗...</div>
       </div>
     </div>
   </div>
+
+  <section id="info" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-left">活動資訊</h2>
+      <div class="row text-center gy-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <i class="bi bi-geo-alt h1"></i>
+          <h4>地理位置</h4>
+          <p>台北南港展覽館 1 館</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bi bi-train-front h1"></i>
+          <h4>交通方式</h4>
+          <p>捷運南港展覽館站 1 號出口直達</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-building h1"></i>
+          <h4>住宿優惠</h4>
+          <p>憑論壇證件享合作酒店 8 折優惠</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up">
+          <h2 class="text-center mb-4">立即報名</h2>
+          <form>
+            <div class="mb-3"><input type="text" class="form-control" placeholder="姓名"></div>
+            <div class="mb-3"><input type="email" class="form-control" placeholder="電子郵件"></div>
+            <button type="submit" class="btn btn-primary w-100">送出申請</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-black text-white text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Future Tech Forum. All Rights Reserved.</p>
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
